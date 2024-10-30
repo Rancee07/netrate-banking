@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request a Loan</title>
+</head>
+<body>
+    <h2>Request a Loan</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Request Loan</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send/Receive Money</title>
+</head>
+<body>
+    <h2>Send/Receive Money</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Transaction</button>
+    </form>
+</body>
+</html>
